@@ -1,0 +1,165 @@
+/* Bordered form */
+body {
+  font-family: "Days One", sans-serif;
+  color: white;
+  font-size: 35px;
+  background-color: #054d75;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+label {
+  margin: 45px 0;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Set a style for all buttons */
+.yellow_button {
+  background-color: #b4860f;
+  color: white;
+  padding: 14px 0;
+  margin: 45px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3cm;
+}
+
+/* Set a style for all buttons */
+.orange_button {
+  background-color: #954726;
+  color: white;
+  padding: 14px 0;
+  margin: 0 0 45px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3cm;
+}
+
+/* Add a hover effect for buttons */
+#login_button:hover {
+  color: #b4860f;
+  background-color: white;
+}
+/* Add a hover effect for buttons */
+#create_button:hover {
+    color: #954726;
+    background-color: white;
+  }
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  background: #054d75;
+  text-align: center;
+  padding: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 70%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background: #054d75;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.insufficient {
+  color: black;
+  z-index: 3;
+  background-color: #c6c6c5f1;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5cm;
+  font-family: 'Days One', sans-serif;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+.insufficient p {
+  margin: 0;
+}
+.insufficient_opened {
+  width: 15cm;
+  height: 8cm;
+}
+
+.insufficient_closed {
+  width: 0;
+  height: 0;
+  border: 0;
+}
+
+#popup {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.insufficient .close_button {
+  width: 100%;
+  text-align: left;
+  font-size: 90px;
+  margin-left: 60px;
+  color: #954726;
+  text-decoration: none;
+}
+
+.insufficient .close_button:hover {
+  color: #f1f1f1;
+}

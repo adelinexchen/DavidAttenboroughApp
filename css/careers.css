@@ -1,0 +1,264 @@
+body {
+  background-color: #eae1c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Style the header */
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #954826;
+  color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  height: 2.5cm;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header img {
+  width: 10cm;
+  max-width: 65%;
+  padding-top: 10px;
+  height: auto;
+}
+
+.careers {
+  position: absolute;
+  top: 2.5cm;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.careers .role,
+.role_closed {
+  font-family: "Cute Font", sans-serif;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  background-color: #ececec;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0.5cm 0 0.5cm 0;
+}
+
+.careers .role .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vw;
+  max-width: 100%;
+}
+
+.careers .role p {
+  margin: 0;
+}
+
+.drop_down {
+  height: 2vw;
+  min-height: 0.5cm;
+  cursor: pointer;
+  padding-right: 2vw;
+  transition: 0.5s;
+}
+
+.drop_up {
+  height: 2vw;
+  cursor: pointer;
+  padding-left: 2vw;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.careers > p {
+  font-family: "Days One", sans-serif;
+  color: #054d75;
+  font-size: 60px;
+  margin-bottom: 2vw;
+  margin-block-start: 2vw;
+}
+
+.careers .role .description {
+  padding: 1vw 2vw 1vw 2vw;
+  font-size: 40px;
+  background-color: white;
+  max-width: 100%;
+  margin: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.careers .role .description_opened {
+  height: fit-content;
+}
+
+.careers .role .description_closed {
+  height: 0;
+  overflow: hidden;
+}
+
+input[type="text"],
+select {
+  font-family: "Carme", sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.submit {
+  font-family: "Carme", sans-serif;
+  background-color: #054d75;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit:hover {
+  background-color: #054d75;
+}
+
+.application_form {
+  position: relative;
+  font-family: "Carme", sans-serif;
+  border-radius: 20px;
+  background-color: #ececec;
+  padding: 20px;
+  font-size: 20px;
+  height: fit-content;
+}
+
+.alert_box {
+  z-index: 3;
+  background-color: #c7c2c2f1;
+  position: fixed;
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 35vh;
+  border-radius: 1.5cm;
+  font-family: "Days One", sans-serif;
+  font-size: 30px;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.alert_box > p {
+  text-align: center;
+  margin-bottom: 1.5cm;
+}
+
+.alert_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.alert_buttons p {
+  background-color: #024d76;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0;
+  margin-bottom: 1cm;
+  padding: 10px 30px 10px 30px;
+}
+
+.alert_buttons p:hover {
+  color: #024d76;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 30px 10px 30px;
+}
+
+.alert_box_opened {
+  width: 15cm;
+  height: 8cm;
+}
+
+.alert_box_closed {
+  width: 0;
+  height: 0;
+  border: 0;
+}
+
+.alert_box .close_button {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 80px;
+  margin-left: 20px;
+  color: #954826;
+  text-decoration: none;
+}
+.alert_box .close_button:hover {
+  color: white;
+}
+
+.careers .FAQs {
+  font-family: "Days One", sans-serif;
+  color: #054d75;
+  font-size: 60px;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
+
+.careers .FAQs > p:nth-child(even) {
+  font-family: "Cute Font", sans-serif;
+  color: rgb(83, 80, 80);
+  font-size: 60px;
+  margin-left: 1cm;
+}
+.careers .FAQs >p:nth-child(odd) {
+  font-family: "Days One", sans-serif;
+  color: black;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  .careers > p {
+  font-size: 40px;
+}
+.careers .role .title {
+  font-size: 50px;
+}
+.careers .FAQs {
+  font-size: 40px;
+}
+.careers .FAQs > p:nth-child(even) {
+  font-family: "Cute Font", sans-serif;
+  color: rgb(83, 80, 80);
+  font-size: 40px;
+  margin-left: 0.5cm;
+}
+.careers .FAQs >p:nth-child(odd) {
+  font-family: "Days One", sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
+}
+@media only screen and (max-width: 700px) {
+  .alert_box, .insufficient {
+    transform: scale(0.75);
+  }
+}

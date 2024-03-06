@@ -1,0 +1,215 @@
+body {
+  background: #afb9b5;
+  overflow: hidden;
+}
+.game {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.controls {
+  position: absolute;
+  gap: 20px;
+  top: 20%;
+  right: 30%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+.board-container {
+  position: relative;
+  width: 20cm;
+  display: flex;
+  justify-content: center;
+
+}
+.card {
+  position: relative;
+  width: 3cm;
+  height: 3cm;
+  cursor: pointer;
+  margin: 0.5cm;
+}
+}
+.board {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  border-radius: 0.5cm;
+  width: 100%;
+  height: 100%;
+  background: #054d75;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #071456;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.card-back {
+  transform: rotateY(180deg) rotateZ(50deg);
+  font-size: 36pt;
+  user-select: none;
+  display: flex;
+  line-height: 100px;
+  background: #fdf8e6;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back img {
+  object-fit: cover;
+  width: 125px;
+  height: 125px;
+}
+
+.card-front {
+  font-size: 48pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #071456;
+  font-family: "Days One";
+}
+.card.flipped .card-front {
+  transform: rotateY(180deg) rotateZ(50deg);
+}
+.card.flipped .card-back {
+  transform: rotateY(0) rotateZ(0);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #0f5e59;
+  color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  height: 2.5cm;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header img {
+  width: 15cm;
+  max-width: 65%;
+  padding-top: 10px;
+  height: auto;
+}
+
+#popup {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.win-card,
+.lose-card {
+  z-index: 3;
+  background-color: #c6cecaf1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 1.5cm;
+  font-family: "Days One", sans-serif;
+  font-size: 40px;
+  overflow: hidden;
+  align-content: flex-start;
+  text-align: center;
+}
+
+.win-card span, .win-card p {
+  transform: translate(0, -30px);
+}
+.win-card_opened {
+  width: 15cm;
+  height: 8cm;
+}
+
+.win-card_closed {
+  width: 0;
+  height: 0;
+  border: 0;
+}
+
+.win-card .close_button,
+.lose-card .close_button {
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+  position: relative;
+  top: 0;
+  left: 15px;
+  font-size: 90px;
+  margin-left: 20px;
+  color: #954726;
+  text-decoration: none;
+}
+
+.win-card .close_button:hover,
+.lose-card .close_button:hover {
+  color: white;
+}
+
+.win-card span:nth-child(3n + 1),
+.lose-card span:nth-child(3n + 1) {
+  color: #954826;
+}
+.win-card span:nth-child(3n + 2),
+.lose-card span:nth-child(3n + 2) {
+  color: #b4860f;
+}
+.win-card span:nth-child(3n),
+.lose-card span:nth-child(3n) {
+  color: #054d75;
+}
+
+.win-card p,
+.lose-card p {
+  margin: 0;
+}
+@media only screen and (max-width: 700px) {
+  .win-card_opened {
+  width: 12cm;
+  height: 8.5cm;
+}
+.win-card .close_button,
+.lose-card .close_button {
+  font-size: 80px;
+}
+.board-container {
+  position: relative;
+  width: 20cm;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  width: 2.5cm;
+  height: 2.5cm;
+  cursor: pointer;
+  margin: 0.35cm;
+}
+}

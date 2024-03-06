@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="css/login.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Days+One"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <body>
+    <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="images/home_page_banner.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter Username"
+          name="uname"
+          required
+        />
+
+        <label for="password"><b>Password</b></label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <div id="login">
+          <div id="create_button" class="yellow_button">
+            Create Account
+          </div>
+        </div>
+      </div>
+      <div id="popup">
+        <div class="insufficient insufficient_opened">
+          <a href="javascript:void(0)" class="exit close_button">&#215</a>
+          <p id="error_message">Username is taken</p>
+      </div>
+    </form>
+  </body>
+  <script src="js/create_user.js"></script>
+</html>

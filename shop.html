@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Adeline Chen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Days+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cute+Font"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <!-- banner and side bar -->
+  <div class="header">
+    <img src="images/shop_banner.png" alt="shop banner" />
+    <div>
+      <a href="shop.html" class="coin" id="balance"></a>
+      <div class="side_bar_buttons">
+        <div class="side_bar_button"></div>
+        <div class="side_bar_button"></div>
+        <div class="side_bar_button"></div>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="sidebar closed_sidebar">
+      <a href="javascript:void(0)" class="exit close_button">&#215</a>
+      <a href="home_page.html" class="pages">Gallery</a>
+      <a href="javascript:void(0)" class="pages exit">Shop</a>
+      <a href="game_selection.html" class="pages">Games</a>
+      <a href="careers.html" class="pages">Careers</a>
+    </div>
+
+    <div class="shop_page">
+      <div id="images/david_and_bird.png" class="shop_item">
+        <img src="images/david_and_bird.png" alt="David and toucan" />
+        <div class="product_description">
+          <div class="caption">David and bird</div>
+          <div class="coin">50</div>
+        </div>
+      </div>
+      <div id="images/david_and_queen.jpeg" class="shop_item">
+        <img src="images/david_and_queen.jpeg" alt="David and the Queen" />
+        <div class="product_description">
+          <div class="caption">David and friend</div>
+          <div class="coin">100</div>
+        </div>
+      </div>
+
+      <div id="images/angry_david.png" class="shop_item">
+        <img src="images/angry_david.png" alt="David is angry" />
+        <div class="product_description">
+          <div class="caption">David is angry</div>
+          <div class="coin">90</div>
+        </div>
+      </div>
+
+      <div id="images/david_and_frog.jpeg" class="shop_item">
+        <img src="images/david_and_frog.jpeg" alt="David and frog" />
+        <div class="product_description">
+          <div class="caption">David and frog</div>
+          <div class="coin">20</div>
+        </div>
+      </div>
+
+      <div id="images/david_hurt.jpeg" class="shop_item">
+        <img src="images/david_hurt.jpeg" alt="David is hurt" />
+        <div class="product_description">
+          <div class="caption">David is hurt</div>
+          <div class="coin">40</div>
+        </div>
+      </div>
+
+      <div id="images/happy_david.png" class="shop_item">
+        <img src="images/happy_david.png" alt="David happy" />
+        <div class="product_description">
+          <div class="caption">David is happy</div>
+          <div class="coin">50</div>
+        </div>
+      </div>
+
+      <div id="images/pensive_david.jpeg" class="shop_item">
+        <img src="images/pensive_david.jpeg" alt="David pensive" />
+        <div class="product_description">
+          <div class="caption">Pensive David</div>
+          <div class="coin">10</div>
+        </div>
+      </div>
+      <div id="images/david_closeup.jpeg" class="shop_item">
+        <img src="images/david_closeup.jpeg" alt="Close up of David" />
+        <div class="product_description">
+          <div class="caption">Close up David</div>
+          <div class="coin">30</div>
+        </div>
+      </div>
+      <div id="images/netflix_david.jpeg" class="shop_item">
+        <img src="images/netflix_david.jpeg" alt="Netflix poster of David" />
+        <div class="product_description">
+          <div class="caption">David has a show</div>
+          <div class="coin">20</div>
+        </div>
+      </div>
+      <div id="images/turtle.png" class="shop_item">
+        <img src="images/turtle.png" alt="Turtle in ocean" />
+        <div class="product_description">
+          <div class="caption">Davids turtle</div>
+          <div class="coin">30</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup">
+      <div class="insufficient insufficient_closed">
+        <a href="javascript:void(0)" class="exit close_button">&#215</a>
+        <span>I</span>
+        <span>n</span>
+        <span>s</span>
+        <span>u</span>
+        <span>f</span>
+        <span>f</span>
+        <span>i</span>
+        <span>c</span>
+        <span>i</span>
+        <span>e</span>
+        <span>n</span>
+        <span style="padding-right: 15px">t</span>
+        <span>f</span>
+        <span>u</span>
+        <span>n</span>
+        <span>d</span>
+        <span>s</span>
+      </div>
+      <div class="alert_box alert_box_closed">
+        <!-- <a href="javascript:void(0)" class="exit close_button">&#215</a> -->
+        <p id="alert_message"></p>
+        <div class="alert_buttons">
+          <p id="confirm_alert">Confirm</p>
+          <p id="cancel_alert">Cancel</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Adeline Chen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/game_normal.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/game_normal.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Days+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Carme"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/memory_banner.png" alt="careers banner" />
+      <div>
+        <a href="shop.html" class="coin" id="balance"></a>
+        <div class="side_bar_buttons">
+          <div class="side_bar_button"></div>
+          <div class="side_bar_button"></div>
+          <div class="side_bar_button"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar closed_sidebar">
+      <a href="javascript:void(0)" class="exit close_button">&#215</a>
+      <a href="home_page.html" class="pages">Gallery</a>
+      <a href="shop.html" class="pages">Shop</a>
+      <a href="game_selection.html" class="pages">Games</a>
+      <a href="careers.html" class="pages">Careers</a>
+    </div>
+    <script src="js/script.js"></script>
+    <div class="game">
+      <div class="board-container">
+        <div class="board" cards="16"></div>
+      </div>
+    </div>
+    <div id="popup">
+      <div class="win-card win-card_closed">
+        <a href="javascript:void(0)" class="exit close_button">&#215</a>
+        <span>Y</span>
+        <span>o</span>
+        <span style="padding-right: 15px">u</span>
+        <span>w</span>
+        <span>o</span>
+        <span>n</span>
+        <span>!</span>
+        <span id="last_char_in_win">!</span>
+      </div>
+    </div>
+  </body>
+</html>

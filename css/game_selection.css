@@ -1,0 +1,113 @@
+body {
+  background: #afb9b5;
+  overflow: hidden;
+}
+.game_selection {
+  top: 30%;
+  width: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .game_selection {
+    top: 20%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .game_selection #normal_mode {
+    height: 30vh;
+    width: auto;
+    transition: 0.5s ease;
+    position: relative;
+    padding-right: 2cm;
+    cursor: pointer;
+  }
+  .game_selection #challenge_mode {
+    height: 25vh;
+    width: auto;
+    position: relative;
+    bottom: 2%;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .game_selection #challenge_mode:hover {
+    height: 30vh;
+  }
+  .game_selection #normal_mode:hover {
+    height: 35vh;
+  }
+  #game_instructions {
+    font-family: "Days One", sans-serif;
+    position: relative;
+    top: 80vh;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .game_selection #normal_mode {
+    width: 40vw;
+    height: auto;
+    transition: 0.5s ease;
+    position: relative;
+    cursor: pointer;
+  }
+  .game_selection #challenge_mode {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    bottom: 2%;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .game_selection #challenge_mode:hover {
+    width: 52vw;
+  }
+  .game_selection #normal_mode:hover {
+    width: 47vw;
+  }
+  #game_instructions {
+    font-family: "Days One", sans-serif;
+    position: absolute;
+    bottom: 3cm;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #0f5e59;
+  color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  height: 2.5cm;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header img {
+  width: 15cm;
+  max-width: 65%;
+  padding-top: 10px;
+  height: auto;
+}

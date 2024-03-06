@@ -1,0 +1,258 @@
+body {
+  background-color: #eae1c7;
+}
+/* Style the header */
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #b4860f;
+  color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  height: 2.5cm;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header img {
+  width: 12cm;
+  max-width: 58%;
+  padding-top: 10px;
+  height: auto;
+}
+
+.header .coin {
+  width: 8vw;
+  height: 4vw;
+  min-width: 2.5cm;
+  min-height: 1.5cm;
+  background-color: #0f5e59;
+  border-radius: 0.5cm;
+  margin: 0.5cm 1cm 0.5cm;
+  font-family: "Days One", sans-serif;
+  font-size: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.insufficient .close_button {
+  width: 100%;
+  text-align: left;
+  font-size: 100px;
+  margin-left: 20px;
+  color: #954726;
+  text-decoration: none;
+}
+
+.insufficient .close_button:hover {
+  color: #f1f1f1;
+  font-size: 100px;
+}
+
+.shop_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 10cm;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin-right: 2cm;
+}
+.shop_item img {
+  max-width: 10cm;
+  max-height: 10cm;
+  margin: 16px;
+  border-radius: 1cm;
+  transition: 1s ease;
+}
+
+.shop_item img:hover {
+  max-width: 12cm;
+  max-height: 12cm;
+  border-radius: 1cm;
+}
+.shop_item .coin {
+  height: 1.25cm;
+  width: 2cm;
+  background-color: #0f5e59;
+  border-radius: 0.35cm;
+  font-family: "Days One", sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  margin: 8px;
+}
+
+.coin_clicked {
+  height: 1.25cm;
+  width: 2cm;
+  border-radius: 0.35cm;
+  font-family: "Days One", sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 8px;
+  background-color: white;
+  color: #0f5e59;
+}
+
+.shop_item .caption {
+  color: #0f5e59;
+  font-family: "Cute Font";
+  font-size: 35px;
+  margin: 8px;
+  margin-right: 20px;
+}
+
+.shop_page {
+  margin-top: 3cm;
+  margin-left: 2cm;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shop_item .product_description {
+  display: flex;
+  flex-direction: row;
+  max-width: 10cm;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.insufficient {
+  z-index: 3;
+  background-color: #c6c6c5f1;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-radius: 1.5cm;
+  font-family: 'Days One', sans-serif;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+.insufficient_opened {
+  width: 15cm;
+  height: 8cm;
+}
+
+.insufficient_closed {
+  width: 0;
+  height: 0;
+  border: 0;
+}
+
+.insufficient span {
+  transform: translate(0, -50px);
+}
+
+.insufficient span:nth-child(3n + 1) {
+  color: #954826;
+}
+.insufficient span:nth-child(3n + 2) {
+  color: #b4860f;
+}
+.insufficient span:nth-child(3n) {
+  color: #054d75;
+}
+
+#popup {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.alert_box {
+  background-color: #c6c6c5f1;
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5cm;
+  font-family: 'Days One', sans-serif;
+  font-size: 30px;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.alert_box > p {
+  text-align: center;
+}
+
+.alert_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.alert_buttons p {
+  background-color: #024d76;
+  color: white;
+  padding: 10px;
+  border-radius: 20px ;
+  margin: 0;
+  margin-bottom: 1cm;
+}
+
+.alert_buttons p:hover {
+  color: #024d76;
+  background: white;
+  padding: 10px;
+  border-radius: 20px ;
+  cursor: pointer;
+}
+
+.alert_box_opened {
+  width: 15cm;
+  height: 8cm;
+}
+
+.alert_box_closed {
+  width: 0;
+  height: 0;
+  border: 0;
+}
+
+.alert_box .close_button {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 80px;
+  margin-left: 20px;
+  color: #954826;
+  text-decoration: none;
+}
+.alert_box .close_button:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .side_bar_buttons {
+    margin-right: 2cm;
+  }
+  .alert_box, .insufficient {
+    transform: scale(0.75);
+  }
+}

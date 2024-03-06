@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Adeline Chen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/home_page.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Days+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-numbers"
+      rel="stylesheet"
+    />
+  </head>
+  <div class="header">
+    <img src="images/home_page_banner.png" alt="Home page banner" />
+    <div class="header_buttons">
+      <a href="shop.html" class="coin" id="balance"></a>
+      <div class="side_bar_buttons">
+        <div class="side_bar_button"></div>
+        <div class="side_bar_button"></div>
+        <div class="side_bar_button"></div>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="sidebar closed_sidebar">
+      <a href="javascript:void(0)" class="exit close_button">&#215</a>
+      <a href="javascript:void(0)" class="pages exit">Gallery</a>
+      <a href="shop.html" class="pages">Shop</a>
+      <a href="game_selection.html" class="pages">Games</a>
+      <a href="careers.html" class="pages">Careers</a>
+    </div>
+
+    <div class="title"></div>
+    <div class="carousel"></div>
+    <p id="reset_button">Logout</p>
+    <div class="time">
+      <div>
+        <div id="davids_time"></div>
+        <div>David's Time</div>
+      </div>
+      <div class="speech_bubble_w_text">
+        <img
+          id="speech_bubble_img"
+          src="images/speech_bubble_dark.png"
+          alt="speech_bubble"
+        />
+        <p id="davids_message"></p>
+      </div>
+      <img
+        src="images/shocked_david.png"
+        alt="David Attenborough shocked"
+        id="shocked_david"
+      />
+    </div>
+    <div class="alert_box alert_box_closed">
+      <a href="javascript:void(0)" class="exit close_button">&#215</a>
+      <p>Are you sure you want to logout?</p>
+      <div class="alert_buttons">
+        <p id="confirm_alert">Confirm</p>
+        <p id="cancel_alert">Cancel</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/home_page.js"></script>
+  </body>
+</html>

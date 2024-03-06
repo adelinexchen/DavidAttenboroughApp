@@ -1,0 +1,125 @@
+.side_bar_buttons {
+  /* margin: top right bottom left */
+  margin: 1vw 0.75cm 1vw 0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.side_bar_button {
+  background-color: white;
+  height: 3mm;
+  width: 1.5cm;
+  border-radius: 2cm;
+  margin-top: 1mm;
+  margin-bottom: 1mm;
+}
+.sidebar {
+  height: 100%;
+  font-family: "Days One", sans-serif;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  text-align: right;
+  width: 30%;
+  align-items: flex-end;
+}
+
+.sidebar .pages {
+  padding: 8px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  margin: 30px;
+  border-radius: 2cm;
+  text-decoration: none;
+  font-size: 50px;
+  color: #024d76;
+  transition: 0.3s;
+  background-color: #adb8c9;
+  width: fit-content;
+}
+
+.sidebar .close_button {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 100px;
+  margin-left: 20px;
+  color: #954726;
+  text-decoration: none;
+}
+
+.sidebar .close_button:hover {
+  color: #f1f1f1;
+  font-size: 100px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  font-size: 65px;
+}
+
+.opened_sidebar {
+  width: 11cm;
+}
+.closed_sidebar {
+  width: 0;
+}
+
+.coin {
+  height: 4.5vw;
+  width: 4.5vw;
+  min-width: 1.5cm;
+  min-height: 1.5cm;
+  background-color: #b4860f;
+  border-radius: 50%;
+  margin: 0.5cm 1cm 0.5cm;
+  right: 4cm;
+  font-family: "Days One", sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.header .coin:hover {
+  color: #b4860f;
+  background-color: white;
+}
+
+.header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header_buttons {
+  width: fit-content;
+  height: 2.5cm;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .side_bar_button {
+    height: 2mm;
+    width: 1.1cm;
+  }
+  .side_bar_buttons{
+    margin-right: 1cm;
+  }
+ #balance {
+    margin-right: 0.5cm;
+  }
+}
