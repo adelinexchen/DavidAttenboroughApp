@@ -18,7 +18,8 @@ To connect to the mongoDB clust run the following commands:
 # assuming you are located in in same the directory as this application
 $ cd server
 $ node index.js
-# use a live server to open any of the html files, without one the pages will not refresh. 
+# use a live server to open any of the html files, without one the pages will not refresh.
+    # the one I use is listed in 'Tech Stack'
 # create an account if you don't already have one
 ```
 ## Appendix
