@@ -1,6 +1,5 @@
 // const baseURL = window.location.href.slice(0, window.location.href.length - 1) + `:8080/`;
 const baseURL = "http://localhost:3000/";
-// const baseURL = "http://34.135.16.213/";
 
 function getCookie(cname) {
   let name = cname + "=";
@@ -94,5 +93,3 @@ document.querySelectorAll(".exit").forEach((close_button) => {
     document.getElementById("popup").style.zIndex = "-1";
   });
 });
-
-// export {updateBalance, updateItems, getCookie};

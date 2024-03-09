@@ -173,9 +173,8 @@ function refreshTime() {
 // refresh time every second
 setInterval(refreshTime, 1000);
 
-// reset user's progress
-// this is in case user wants to restart their progress, but also for the sake of my demo
-document.getElementById("reset_button").addEventListener("click", () => {
+// logout 
+document.getElementById("logout_button").addEventListener("click", () => {
   document.cookie = "user=";
   document.cookie = "balance=";
   document.cookie = "items=";

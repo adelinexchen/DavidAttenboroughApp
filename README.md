@@ -6,17 +6,19 @@ I love David Attenborough so much it physically hurts. It makes me really sad th
 More stickers and job postings coming soon!!!!!!
 ## Tech Stack
 Backend: Express.js, mongoDB\
-Frontend: pure html, css and javascript
+Frontend: pure html, css and javascript\
+
+To run: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 \
 \
-It also technically can be transported around with docker and kubernetes, but it's too expensive so I no longer have any GCP credit
+I also used to be able transport it around with docker and kubernetes, but it's too expensive and I ran out of my free GCP credit :(
 ## How to use
 To connect to the mongoDB clust run the following commands:
 ```
 # assuming you are located in in same the directory as this application
 $ cd server
 $ node index.js
-# open any of the html files, you will automatically be redirected to the login page
+# use a live server to open any of the html files, without one the pages will not refresh. 
 # create an account if you don't already have one
 ```
 ## Appendix

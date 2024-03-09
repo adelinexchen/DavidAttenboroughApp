@@ -172,8 +172,7 @@ const flipToFront = (card) => {
 
       updateBalance(getCookie("user"), Number(getCookie("balance")) + coins);
 
-      document.getElementById("balance").textContent =
-        getCookie("balance");
+      document.getElementById("balance").textContent = getCookie("balance");
       const lastChar = document.getElementById("last_char_in_win");
       win.classList.remove("win-card_closed");
       win.classList.add("win-card_opened");
@@ -222,8 +221,8 @@ lose.querySelector(".exit").addEventListener("click", () => {
   document.getElementById("popup").style.zIndex = "-1";
 });
 
-// reset button
-document.getElementById("reset_button").addEventListener("click", () => {
+// logout button
+document.getElementById("logout_button").addEventListener("click", () => {
   location.reload();
 });
 

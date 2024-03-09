@@ -1,6 +1,5 @@
 // const baseURL = window.location.href.slice(0, window.location.href.length - 1) + `:8080/`;
 const baseURL = "http://localhost:3000/";
-// const baseURL = "http://34.135.16.213/";
 
 async function createUser(username, password) {
   const url = `${baseURL}create`;

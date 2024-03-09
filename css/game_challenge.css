@@ -250,13 +250,13 @@ body {
   align-items: center;
 }
 
-#reset_button {
+#logout_button {
   width: 9cm;
   height: auto;
   transition: 1s ease;
   transform: translate(0, -40px);
 }
-#reset_button:hover {
+#logout_button:hover {
   width: 10cm;
 }
 
@@ -311,4 +311,3 @@ body {
     font-size: 50px;
   }
 }
-
